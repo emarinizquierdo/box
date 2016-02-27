@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>App using webpack - riotjs javascript library</title>
+  <script type="text/javascript" src="dist/mylib.box.js"></script>
+</head>
+
+<body>
+
+  <p>Webpack + riotjs javascript library example</p>
+  <div id="mybox1"></div>
+  <div id="mybox2"></div>
+
+  <script>
+  
+    var boxWrapper1 = document.querySelector('#mybox1');
+    var boxWrapper2 = document.querySelector('#mybox2');
+    var box1 = new mylib.Box(boxWrapper1);
+    var box2 = new mylib.Box(boxWrapper2);
+
+    box1.init("red");
+    box2.init("green");
+
+  </script>
+
+</body>
+
+</html>
